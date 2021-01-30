@@ -29,6 +29,8 @@ Firstly you need to configure the python interpreter path which can be done by r
 which python3
 which python 
 ```
+Modify this path at the top of the files startClass.py and nextClass.py i.e
+#!/usr/bin/python3 to #!{Your Path}. \
 Next give permissions to the script by running the following commands in the code directory.
 ```
 chmod +x startClass.py
