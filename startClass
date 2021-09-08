@@ -2,10 +2,10 @@
 import webbrowser
 import datetime
 
-from timeTable import timeTable, codeToCourse
+from timeTable import timeTable,  codeToPHPId
 
 def startClass(classCode):
-    link = 'https://iitjammu.ipearl.ai/extras/course-v1:ITJA+'+str(classCode)+'+2021/join_zoom'
+    link = 'https://lms.iitjammu.ac.in/course/view.php?id=+'+str(codeToPHPId.get(classCode))
     webbrowser.open(link)
 
 def getCurrentDay():
@@ -22,7 +22,6 @@ def timeInSlot(slots, time):
         if(time>=startTime and time<=endTime):
             return True
     return False
-
 
 
 today = getCurrentDay()
